@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="body2">
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!--<li><a href="#Experience">Timelines</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <div id="headerhi">
+                    <h1>Hi, I'm Zak<br>FullStack Dev</h1>
+
+
+                    <a href="./db/resume.pdf" download="resume_EladjSalimZakaria.pdf">
+
+                        <button>Download CV</button>
+
+
+                    </a>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div id="aboutheader">
+                <div class="row">
+                    <div id="aboutimg">
+                        <div id="aboutimginfo">
+                            <h1>Eladj Salim<br>Zakaria</h1>
+
+                            <h3>19yo</h3>
+
+                            <h2>222231214001<br>InfoLic-S2G3</h2>
+
+                             
+
+
+
+
+                        </div>
+                    </div>
+                    <div id="aboutbox">
+                        <h1>About</h1>
+                        <p>Hi. I am a student at the University of Sciences and Technologies Houarri Boumedienne. I am
+                            studying my first year of computer science licence degree. In the same time, I work as a
+                            fullstack developer on various projects and providing many quality services with the
+                            required
+                            professionalism. </p>
+                        <nav>
+                            <ul>
+                                <li><a id="skillsTab" class="selected tabLink" href="#about"
+                                        onclick="changetab('skillsTab', 'Skills')">Skills</a>
+                                </li>
+                                <li><a id="educationTab" class="tabLink" href="#about"
+                                        onclick="changetab('educationTab', 'Education')">Education</a>
+                                </li>
+                                <li><a id="experienceTab" class="tabLink" href="#about"
+                                        onclick="changetab('experienceTab', 'Experience')">Experience</a></li>
+                            </ul>
+                        </nav>
+
+                        <script>
+
+
+
+
+
+                            function changetab(id, pageid) {
+                                var tabLinks = document.getElementsByClassName("tabLink")
+
+                                var tabs = document.getElementsByClassName("minitab")
+
+                                for (i of tabLinks) {
+                                    i.classList.remove("selected")
+                                }
+
+                                for (i of tabs) {
+                                    i.classList.remove("activeminitab")
+                                }
+
+                                document.getElementById(id).classList.add("selected");
+
+                                document.getElementById(pageid).classList.add("activeminitab");
+
+
+
+
+                            }
+                        </script>
+
+
+                        <div id="tabsBox">
+
+
+
+                            <div id="Skills" class="minitab activeminitab"">
+
+                                <div id="skillRow">
+
+                                <div class="skillCol">
+
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>python</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>tkinter</h2> <span>80%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 80%;"> </span> </div>
+                                    </div>
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>dart</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>flutter</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>mobile development</h2> <span>90%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 90%;"> </span> </div>
+                                    </div>
+
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>desktop development</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>languages/communication</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="skillCol">
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>django/API</h2> <span>90%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 90%;"> </span> </div>
+                                    </div>
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>linux servers</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>databases</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>html/css</h2> <span>60%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 60%;"> </span> </div>
+                                    </div>
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>solidworks 2016</h2> <span>85%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 85%;"> </span> </div>
+                                    </div>
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>filmora9</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+
+                                    <div class="skillCard">
+                                        <div class="skillCardInfo">
+                                            <h2>office pack 2017</h2> <span>95%</span>
+                                        </div>
+                                        <div class="progressBar"> <span style="width: 95%;"> </span> </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                        <div id="Education" class="minitab">
+                            <div id="educationColumn">
+
+                                <div class="timelineCard">
+
+                                    <div class="timelineTitle">
+                                        <h2>USTHB</h2>
+                                        <span>2023</span>
+                                    </div>
+
+                                    <div class="timelineInfo">
+                                        <p>This is my first year</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="timelineCard">
+
+                                    <div class="timelineTitle">
+
+                                        <h2>Self learning</h2>
+                                        <span>2016-2023</span>
+                                    </div>
+                                    <div class="timelineInfo">
+                                        <p>Youtube tutorials and many books</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Experience" class="minitab">
+                            <div id="experienceColumn">
+
+
+
+                                <div class="timelineCard">
+
+                                    <div class="timelineTitle">
+
+                                        <h2>laMarquise App</h2>
+                                        <span>2022-2023</span>
+                                    </div>
+
+
+                                    <div class="timelineInfo">
+                                        <p>Fullstack restaurant app with more<br>than 200 customers registered in the first year</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="timelineCard">
+
+                                    <div class="timelineTitle">
+
+                                        <h2>AutoSchoolApp</h2>
+                                        <span>2021-2022</span>
+                                    </div>
+
+
+                                    <div class="timelineInfo">
+                                        <p>A simple quiz app with over 50 students registered</p>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="timelineCard">
+
+                                    <div class="timelineTitle">
+
+                                        <h2>Wifi killer</h2>
+                                        <span>2022</span>
+                                    </div>
+
+
+
+                                    <div class="timelineInfo">
+                                        <p>Hacking tool</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="timelineCard">
+
+
+
+                                    <div class="timelineTitle">
+                                        <h2>DNA sequence analyzer</h2>
+                                        <span>2020</span>
+
+                                    </div>
+
+
+
+                                    <div class="timelineInfo">
+                                        <p>The first school project presented as an app ever</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="timelineCard">
+
+
+                                    <div class="timelineTitle">
+                                        <h2>Freelance</h2>
+                                        <span>2020-2023</span>
+
+                                    </div>
+
+
+
+                                    <div class="timelineInfo">
+                                        <p>Fullstack</p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div id="contact">
+        <div id="contactHeader">
+            <div class="row">
+                <div id="contactprofile">
+
+                    <div class="center">
+
+                        <h1>Accounts</h1>
+
+                    </div>
+
+                    <div class="iconLine2">
+
+                        <div class="iconLine2Img" id="gmail">
+
+
+
+                        </div>
+                        <h2>Gmail<br><span>zakeladj@gmail.com</span></h2>
+
+
+                    </div>
+
+                    <div class="iconLine2">
+
+                        <div class="iconLine2Img" id="github">
+
+
+
+                        </div>
+                        <h2>Github<br><span>github.com/zaqks</span></h2>
+
+
+                    </div>
+                    <div class="iconLine2">
+
+                        <div class="iconLine2Img" id="instagram">
+
+
+
+                        </div>
+                        <h2>Instagram<br><span>instagram.com/_zaqks</span></h2>
+
+
+
+                    </div>
+                    <div class="iconLine2">
+
+                        <div class="iconLine2Img" id="discord">
+
+
+                        </div>
+                        <h2>Discord<br><span>discord.com/zaqks</span></h2>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+                <div id="contactbox">
+                    <h1>Contact me</h1>
+
+                    <div class="column">
+
+
+
+                        <div class="iconLine">
+
+                            <div class="iconimgname">
+
+
+                                <div class="iconImg"><img src="images/icons/icons8-location-48.png" alt=""></div>
+                                <div class="iconName">Location</div>
+
+                            </div>
+
+
+                            <div class="iconContent">Boumerders Algiers</div>
+                        </div>
+
+
+                        <div class="iconLine">
+
+                            <div class="iconimgname">
+
+
+                                <div class="iconImg"><img src="images/icons/icons8-earth-globe-48.png" alt=""></div>
+                                <div class="iconName">Timezone</div>
+
+                            </div>
+
+
+                            <div class="iconContent">UTC+1</div>
+                        </div>
+
+
+
+
+
+
+                        <div class="iconLine">
+
+                            <div class="iconimgname">
+
+
+                                <div class="iconImg"><img src="images/icons/icons8-smartphone-48.png" alt=""></div>
+                                <div class="iconName">Phone</div>
+
+                            </div>
+
+
+                            <div class="iconContent">+213 792 39 79 06</div>
+                        </div>
+
+
+                        <div class="iconLine">
+                            <div class="iconimgname">
+
+
+                                <div class="iconImg"><img src="images/icons/icons8-whatsapp-48.png" alt=""></div>
+                                <div class="iconName">WhatsApp</div>
+
+                            </div>
+
+
+                            <div class="iconContent">+213 792 39 79 06</div>
+                        </div>
+
+
+                        <div class="iconLine">
+                            <div class="iconimgname">
+
+
+                                <div class="iconImg"><img src="images/icons/icons8-telegram-app-48.png" alt=""></div>
+                                <div class="iconName">Telegram</div>
+
+                            </div>
+
+
+                            <div class="iconContent">+213 792 39 79 06</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
