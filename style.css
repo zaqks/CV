@@ -73,10 +73,18 @@ nav ul li a {
     width: 100%;
 }
 
+#headerhi span {
+ 	
+    font-size: 25px;
+font-weight:400;
+ 
+
+}
+
 #headerhi h1 {
     color: white;
     font-size: 60px;
-    margin-top: 30vh;
+    margin-top: 25vh;
 
 }
 
@@ -649,6 +657,14 @@ nav ul li a {
         margin-top: 20vh;
 
     }
+    
+    #headerhi span {
+ 	
+    font-size: 15px;
+font-weight:400;
+ 
+
+}
 
 
     nav ul {
